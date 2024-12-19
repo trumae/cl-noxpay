@@ -2,4 +2,6 @@
   (:use #:cl))
 (in-package #:cl-noxpay)
 
-;; blah blah blah.
+(defparameter *URLBASE* "https://api2.noxpay.io")
+
+;;(defun 
