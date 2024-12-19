@@ -4,4 +4,7 @@
 
 (defparameter *URLBASE* "https://api2.noxpay.io")
 
-;;(defun 
+(defun test-auth (apikey)
+  (drakma:http-request
+   (format nil "~A/test-auth" *URLBASE*) 
+   :additional-headers `(("api-key" ,@apikey))))
